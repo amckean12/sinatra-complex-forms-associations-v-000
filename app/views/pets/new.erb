@@ -4,12 +4,12 @@
   <br></br>
   <input type="text" name="pet[name]" id="pet_name">
   <br></br>
-  <label>Choose and existing Owner:</label> 
+  <label>Choose and existing Owner:</label>
   <br></br>
   <%Owner.all.each do |owner|%>
     <input type="checkbox" name="owner[name]" id="<%=owner.id%>" value="<%=pet.id%>"><%=owner.name%>
   </input>
   <%end%>
   <br></br>
-  
+
 </form>
